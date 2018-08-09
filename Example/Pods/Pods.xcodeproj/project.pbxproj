@@ -11,6 +11,13 @@
 		39D00E786877256B2724827871F47CDA /* PaymentValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BE8A4798F14ABD6A6728C5B8D99FC3 /* PaymentValidator-dummy.m */; };
 		725067E18A01E1523BF71BDD01A74225 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A60792217D1B9E6DEB100CD9CDCFFE3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BFD4C63D211CC92000A6FA1C /* CreditCardTypeValidationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4C636211CC92000A6FA1C /* CreditCardTypeValidationState.swift */; };
+		BFD4C63E211CC92000A6FA1C /* PrefixContainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4C637211CC92000A6FA1C /* PrefixContainable.swift */; };
+		BFD4C63F211CC92000A6FA1C /* CreditCardTypeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4C638211CC92000A6FA1C /* CreditCardTypeValidator.swift */; };
+		BFD4C640211CC92000A6FA1C /* CreditCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4C639211CC92000A6FA1C /* CreditCardType.swift */; };
+		BFD4C641211CC92000A6FA1C /* Mathematics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4C63A211CC92000A6FA1C /* Mathematics.swift */; };
+		BFD4C642211CC92000A6FA1C /* CreditCardTypeValidationRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4C63B211CC92000A6FA1C /* CreditCardTypeValidationRequirement.swift */; };
+		BFD4C643211CC92000A6FA1C /* PaymentConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4C63C211CC92000A6FA1C /* PaymentConstants.swift */; };
 		D662C1404D19F44B09712F15F20E8F05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		DF73783F4330784810684FF5E4BEB443 /* Pods-PaymentValidator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 739A362248E7462C61F13CD53DD7EC5A /* Pods-PaymentValidator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5FE3A9BDF3FE5DBBA3EB83E4DABEBAE /* PaymentValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EB4DA9E36EEC493D801173857C5FB8 /* PaymentValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,6 +70,13 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A86022FBA99557B99F8A00B75DCE5256 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF8951E96FA1772D31D389560695AC1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BFD4C636211CC92000A6FA1C /* CreditCardTypeValidationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardTypeValidationState.swift; path = PaymentValidator/Classes/CreditCardTypeValidationState.swift; sourceTree = "<group>"; };
+		BFD4C637211CC92000A6FA1C /* PrefixContainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrefixContainable.swift; path = PaymentValidator/Classes/PrefixContainable.swift; sourceTree = "<group>"; };
+		BFD4C638211CC92000A6FA1C /* CreditCardTypeValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardTypeValidator.swift; path = PaymentValidator/Classes/CreditCardTypeValidator.swift; sourceTree = "<group>"; };
+		BFD4C639211CC92000A6FA1C /* CreditCardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardType.swift; path = PaymentValidator/Classes/CreditCardType.swift; sourceTree = "<group>"; };
+		BFD4C63A211CC92000A6FA1C /* Mathematics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mathematics.swift; path = PaymentValidator/Classes/Mathematics.swift; sourceTree = "<group>"; };
+		BFD4C63B211CC92000A6FA1C /* CreditCardTypeValidationRequirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardTypeValidationRequirement.swift; path = PaymentValidator/Classes/CreditCardTypeValidationRequirement.swift; sourceTree = "<group>"; };
+		BFD4C63C211CC92000A6FA1C /* PaymentConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentConstants.swift; path = PaymentValidator/Classes/PaymentConstants.swift; sourceTree = "<group>"; };
 		C7BE8A4798F14ABD6A6728C5B8D99FC3 /* PaymentValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PaymentValidator-dummy.m"; sourceTree = "<group>"; };
 		C7E8A6A6FBEBB008AB8D3EAD88B34285 /* PaymentValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PaymentValidator-prefix.pch"; sourceTree = "<group>"; };
 		EF0A89A94166F610FED48EAD0E6AE8CC /* Pods-PaymentValidator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaymentValidator_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -103,6 +117,13 @@
 		334E8DE73970A09D9E2E12370A902DA3 /* PaymentValidator */ = {
 			isa = PBXGroup;
 			children = (
+				BFD4C639211CC92000A6FA1C /* CreditCardType.swift */,
+				BFD4C63B211CC92000A6FA1C /* CreditCardTypeValidationRequirement.swift */,
+				BFD4C636211CC92000A6FA1C /* CreditCardTypeValidationState.swift */,
+				BFD4C638211CC92000A6FA1C /* CreditCardTypeValidator.swift */,
+				BFD4C63A211CC92000A6FA1C /* Mathematics.swift */,
+				BFD4C63C211CC92000A6FA1C /* PaymentConstants.swift */,
+				BFD4C637211CC92000A6FA1C /* PrefixContainable.swift */,
 				C2A8869F2DA6CE69180BBF0347B80215 /* Pod */,
 				704FA3CFB192E684AFD4A0E515A996BB /* Support Files */,
 			);
@@ -315,6 +336,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					13FE2F875C3654AA432DFF1ED268E13F = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -340,7 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD4C641211CC92000A6FA1C /* Mathematics.swift in Sources */,
+				BFD4C642211CC92000A6FA1C /* CreditCardTypeValidationRequirement.swift in Sources */,
 				39D00E786877256B2724827871F47CDA /* PaymentValidator-dummy.m in Sources */,
+				BFD4C640211CC92000A6FA1C /* CreditCardType.swift in Sources */,
+				BFD4C643211CC92000A6FA1C /* PaymentConstants.swift in Sources */,
+				BFD4C63F211CC92000A6FA1C /* CreditCardTypeValidator.swift in Sources */,
+				BFD4C63E211CC92000A6FA1C /* PrefixContainable.swift in Sources */,
+				BFD4C63D211CC92000A6FA1C /* CreditCardTypeValidationState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4475445631ECC108D4FC57256BCA161A /* PaymentValidator.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -581,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4475445631ECC108D4FC57256BCA161A /* PaymentValidator.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

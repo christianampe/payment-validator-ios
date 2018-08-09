@@ -143,9 +143,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/FlatDropdown/FlatDropdown.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FlatField/FlatField.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PaymentValidator/PaymentValidator.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/FlatDropdown/FlatDropdown.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FlatField/FlatField.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PaymentValidator/PaymentValidator.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

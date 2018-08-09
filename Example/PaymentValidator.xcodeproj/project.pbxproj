@@ -318,10 +318,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PaymentValidator_Example/Pods-PaymentValidator_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FlatDropdown/FlatDropdown.framework",
+				"${BUILT_PRODUCTS_DIR}/FlatField/FlatField.framework",
 				"${BUILT_PRODUCTS_DIR}/PaymentValidator/PaymentValidator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlatDropdown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlatField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PaymentValidator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

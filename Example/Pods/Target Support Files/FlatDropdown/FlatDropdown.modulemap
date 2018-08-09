@@ -1,0 +1,6 @@
+framework module FlatDropdown {
+  umbrella header "FlatDropdown-umbrella.h"
+
+  export *
+  module * { export * }
+}

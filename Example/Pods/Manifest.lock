@@ -1,16 +1,27 @@
 PODS:
-  - PaymentValidator (0.1.0)
+  - FlatDropdown (0.0.1):
+    - FlatField (~> 0.0.5)
+  - FlatField (0.0.5)
+  - PaymentValidator (0.0.1)
 
 DEPENDENCIES:
+  - FlatDropdown (~> 0.0.1)
   - PaymentValidator (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FlatDropdown
+    - FlatField
 
 EXTERNAL SOURCES:
   PaymentValidator:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PaymentValidator: 343843b2d529737b659d0be3120cea1ee0e5c85b
+  FlatDropdown: 0ec71ff8333de2bb2a8d9c2636c5eb9e8a20cea0
+  FlatField: 499371df8128127c5dae2e9441ba9b42205df767
+  PaymentValidator: 0e27264906e7335eafebc4e5f5b3f94753789218
 
-PODFILE CHECKSUM: 8f941f6567c7e7513e9ab32b952457a5599a9948
+PODFILE CHECKSUM: 596c1c0780af8be07e858a0207fd06250b41d13e
 
 COCOAPODS: 1.5.0

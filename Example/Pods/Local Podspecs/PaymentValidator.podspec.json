@@ -1,9 +1,9 @@
 {
   "name": "PaymentValidator",
-  "version": "0.1.0",
-  "summary": "A short description of PaymentValidator.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/christianampe/PaymentValidator",
+  "version": "0.0.1",
+  "summary": "A simple credit card validator.",
+  "description": "A simple credit card validator useful to developers who want an on device way of validating a credit cards number is potentially valid.",
+  "homepage": "https://github.com/educrate/payment-validator-ios",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,12 @@
     "christianampe": "christianampe.work@gmail.com"
   },
   "source": {
-    "git": "https://github.com/christianampe/PaymentValidator.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/educrate/payment-validator-ios.git",
+    "tag": "0.0.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.3"
   },
+  "swift_version": "4.1",
   "source_files": "PaymentValidator/Classes/**/*"
 }

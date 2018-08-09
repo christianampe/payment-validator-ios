@@ -152,6 +152,10 @@ open class FlatField: UIView {
         addSubview(underline)
         
         textField.delegate = self
+        
+        textField.addTarget(self,
+                            action: #selector(textFieldDidChange(_:)),
+                            for: UIControlEvents.editingChanged)
     }
     
     private func addContraints() {
@@ -196,12 +200,8 @@ extension FlatField: UITextFieldDelegate {
         underlineHeightConstraint.constant = underlineThickness
     }
     
-    public func textField(_ textField: UITextField,
-                          shouldChangeCharactersIn range: NSRange,
-                          replacementString string: String) -> Bool {
-        
+    @objc
+    public func textFieldDidChange(_ textField: UITextField) {
         delegate?.textChanged(self)
-        
-        return true
     }
 }

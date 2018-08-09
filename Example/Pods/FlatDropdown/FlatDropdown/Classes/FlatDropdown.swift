@@ -124,14 +124,17 @@ open class FlatDropdown: UIView {
     
     public override convenience init(frame: CGRect) {
         
-        self.init(frame, config: FlatFieldConfig.default,
+        self.init(frame,
+                  config: .default,
+                  flatFieldConfig: .default,
                   dataSource: nil,
                   delegate: nil)
     }
     
     // MARK: Programmatic Initalizer
     public init(_ frame: CGRect,
-                config: FlatFieldConfig,
+                config: FlatDropdownConfig,
+                flatFieldConfig: FlatFieldConfig,
                 dataSource: FlatDropdownDataSource?,
                 delegate: FlatDropdownDelegate?) {
         
@@ -152,7 +155,8 @@ open class FlatDropdown: UIView {
         addViews()
         addContraints()
         
-        initConfig(flatFieldConfig: config)
+        initConfig(config,
+                   flatFieldConfig: flatFieldConfig)
     }
     
     // MARK: Storyboard Initalizer

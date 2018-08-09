@@ -24,12 +24,12 @@ extension ClosedRange: PrefixContainable {
         
         let trimmedRange: ClosedRange<String> = {
             let length = text.count
-            let trimmedStart = lower.prefix(length)
-            let trimmedEnd = upper.prefix(length)
+            let trimmedStart = String(lower.prefix(length))
+            let trimmedEnd = String(upper.prefix(length))
             return trimmedStart...trimmedEnd
         }()
         
-        let trimmedText = text.prefix(trimmedRange.lowerBound.count)
+        let trimmedText = String(text.prefix(trimmedRange.lowerBound.count))
         
         return trimmedRange ~= trimmedText
     }
@@ -47,11 +47,5 @@ extension ClosedRange: PrefixContainable {
 extension String: PrefixContainable {
     public func hasCommonPrefix(with text: String) -> Bool {
         return hasPrefix(text) || text.hasPrefix(self)
-    }
-}
-
-fileprivate extension String {
-    func prefix(_ maxLength: Int) -> String {
-        return String(characters.prefix(maxLength))
     }
 }

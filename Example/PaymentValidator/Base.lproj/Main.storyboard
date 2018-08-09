@@ -21,19 +21,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FhI-oY-HOX">
-                                <rect key="frame" x="139" y="178" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOf-wc-opm" customClass="FlatDropdown" customModule="FlatDropdown">
+                                <rect key="frame" x="24" y="84" width="327" height="247"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="247" id="vZ5-aW-7Wm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KOf-wc-opm" secondAttribute="trailing" constant="24" id="Abh-mk-ILk"/>
+                            <constraint firstItem="KOf-wc-opm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="IlR-1e-9Cj"/>
+                            <constraint firstItem="KOf-wc-opm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="24" id="Jgi-86-XhL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flatDropdown" destination="KOf-wc-opm" id="XZ5-hj-L2Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="124" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>

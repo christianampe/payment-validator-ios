@@ -53,6 +53,7 @@ public enum VisaType: Equatable {
     case electron
 }
 
+// MARK: - Public Methods For Card Validation
 public extension CreditCardType {
     func isValid(_ accountNumber: String) -> Bool {
         return requirement.isValid(accountNumber) && Mathematics.luhnCheck(accountNumber)
@@ -63,6 +64,7 @@ public extension CreditCardType {
     }
 }
 
+// MARK: - Public Property Methods
 public extension CreditCardType {
     func segmentGrouping(for length: Int) -> [Int] {
         if let assignedGrouping = segmentGrouping[length] {
@@ -73,6 +75,49 @@ public extension CreditCardType {
     }
 }
 
+
+public extension CreditCardType {
+    var name: String {
+        switch self {
+        case .amex:
+            return "American Express"
+        case .unionPay:
+            return "Union Pay"
+        case .dinersClub(let type):
+            switch type {
+            case .carteBlanche:
+                return "Diner's Club - Carte Blanche"
+            case .international:
+                return "Diner's Club - International"
+            case .usbc:
+                return "Diner's Club - United States & Canada"
+            }
+        case .discover:
+            return "Discover Card"
+        case .jcb:
+            return "JCB"
+        case .maestro:
+            return "Maestro"
+        case .dankort:
+            return "Dankort"
+        case .masterCard:
+            return "Mastercard"
+        case .visa(let type):
+            switch type {
+            case .visa:
+                return "Visa"
+            case .electron:
+                return "Visa Electron"
+            }
+        case .uatp:
+            return "UATP"
+        case .interPayment:
+            return "Interpayment"
+        }
+    }
+}
+
+// MARK: - Main Validation Method On Array Of Credit Card Type
 public extension Array where Element == CreditCardType {
     func validate(prefix: String) -> [Element] {
         // have an array of credit cards and length of prefix to compare against

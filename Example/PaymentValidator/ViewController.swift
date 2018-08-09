@@ -7,18 +7,53 @@
 //
 
 import UIKit
+import FlatField
+import FlatDropdown
+import PaymentValidator
 
 class ViewController: UIViewController {
+    var data: [[String]] = [[]]
+    
+    @IBOutlet weak var flatDropdown: FlatDropdown!
+    
+    let validator = CreditCardTypeValidator()
+}
 
+extension ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        flatDropdown.delegate = self
+        flatDropdown.dataSource = self
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension ViewController: FlatDropdownDelegate {
+    func textDidChange(_ sender: FlatField) {
+        guard let text = sender.textField.text else {
+            return
+        }
+        
+        updateData(for: validator.card(for: text))
     }
+    
+    func didSelectRow(_ at: IndexPath, _ sender: FlatDropdown) {
+        // do nothing
+    }
+    
+    func didBeginEditing(_ sender: FlatField) {
+        // do nothing
+    }
+    
+    func didEndEditing(_ sender: FlatField) {
+        // do nothing
+    }
+}
 
+extension ViewController: FlatDropdownDataSource {
+    func updateData(for state: CreditCardTypeValidationState) {
+        
+        
+        flatDropdown.tableView.reloadData()
+    }
 }
 

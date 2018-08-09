@@ -1,0 +1,16 @@
+PODS:
+  - PaymentValidator (0.1.0)
+
+DEPENDENCIES:
+  - PaymentValidator (from `../`)
+
+EXTERNAL SOURCES:
+  PaymentValidator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PaymentValidator: 343843b2d529737b659d0be3120cea1ee0e5c85b
+
+PODFILE CHECKSUM: 8f941f6567c7e7513e9ab32b952457a5599a9948
+
+COCOAPODS: 1.5.0

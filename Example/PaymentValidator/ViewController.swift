@@ -51,7 +51,16 @@ extension ViewController: FlatDropdownDelegate {
 
 extension ViewController: FlatDropdownDataSource {
     func updateData(for state: CreditCardTypeValidationState) {
+        data = [[]]
         
+        guard let cards = state.cards else {
+            flatDropdown.tableView.reloadData()
+            return
+        }
+        
+        cards.forEach { card in
+            data[0].append(card.name)
+        }
         
         flatDropdown.tableView.reloadData()
     }

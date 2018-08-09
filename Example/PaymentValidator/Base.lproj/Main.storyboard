@@ -22,16 +22,20 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOf-wc-opm" customClass="FlatDropdown" customModule="FlatDropdown">
-                                <rect key="frame" x="24" y="84" width="327" height="247"/>
+                                <rect key="frame" x="24" y="84" width="327" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="247" id="vZ5-aW-7Wm"/>
-                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxNumberOfResultsPerSectionToDisplay">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Account Number"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KOf-wc-opm" secondAttribute="trailing" constant="24" id="Abh-mk-ILk"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KOf-wc-opm" secondAttribute="bottom" constant="64" id="Dop-ep-wo2"/>
                             <constraint firstItem="KOf-wc-opm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="IlR-1e-9Cj"/>
                             <constraint firstItem="KOf-wc-opm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="24" id="Jgi-86-XhL"/>
                         </constraints>

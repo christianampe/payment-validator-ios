@@ -135,7 +135,7 @@ public extension CreditCardType {
         case .mastercard:
             return #imageLiteral(resourceName: "mastercard")
         case .visa:
-            return #imageLiteral(resourceName: "amex")
+            return #imageLiteral(resourceName: "visa")
         case .uatp:
             return #imageLiteral(resourceName: "uatp")
         case .interpayment:

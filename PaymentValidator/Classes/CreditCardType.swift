@@ -75,7 +75,7 @@ public extension CreditCardType {
     }
 }
 
-
+// MARK: - Public Name Getter
 public extension CreditCardType {
     var name: String {
         switch self {
@@ -113,6 +113,60 @@ public extension CreditCardType {
             return "UATP"
         case .interPayment:
             return "Interpayment"
+        }
+    }
+    
+    var logoDark: UIImage {
+        switch self {
+        case .amex:
+            return
+        case .unionPay:
+            return
+        case .dinersClub:
+            return
+        case .discover:
+            return
+        case .jcb:
+            return
+        case .maestro:
+            return
+        case .dankort:
+            return
+        case .masterCard:
+            return
+        case .visa:
+            return
+        case .uatp:
+            return
+        case .interPayment:
+            return
+        }
+    }
+    
+    var logoLight: UIImage {
+        switch self {
+        case .amex:
+            return
+        case .unionPay:
+            return
+        case .dinersClub:
+            return
+        case .discover:
+            return
+        case .jcb:
+            return
+        case .maestro:
+            return
+        case .dankort:
+            return
+        case .masterCard:
+            return
+        case .visa:
+            return
+        case .uatp:
+            return
+        case .interPayment:
+            return
         }
     }
 }

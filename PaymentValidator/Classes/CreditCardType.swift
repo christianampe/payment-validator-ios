@@ -12,14 +12,14 @@ public enum CreditCardType: Equatable, Hashable {
     case visa(type: VisaType)
     case amex
     case unionPay
-    case masterCard
+    case mastercard
     case maestro
     case dinersClub(type: DinersClubType)
     case discover
     case jcb
     case uatp
     case dankort
-    case interPayment
+    case interpayment
 }
 
 // MARK: - All Cards
@@ -28,7 +28,7 @@ public extension CreditCardType {
                                                .visa(type: .electron),
                                                .amex,
                                                .unionPay,
-                                               .masterCard,
+                                               .mastercard,
                                                .maestro,
                                                .dinersClub(type: .carteBlanche),
                                                .dinersClub(type: .international),
@@ -37,7 +37,7 @@ public extension CreditCardType {
                                                .jcb,
                                                .uatp,
                                                .dankort,
-                                               .interPayment]
+                                               .interpayment]
 }
 
 // MARK: - Diners Card Types
@@ -75,7 +75,7 @@ public extension CreditCardType {
     }
 }
 
-// MARK: - Public Name Getter
+// MARK: - Public Getters
 public extension CreditCardType {
     var name: String {
         switch self {
@@ -100,7 +100,7 @@ public extension CreditCardType {
             return "Maestro"
         case .dankort:
             return "Dankort"
-        case .masterCard:
+        case .mastercard:
             return "Mastercard"
         case .visa(let type):
             switch type {
@@ -111,7 +111,7 @@ public extension CreditCardType {
             }
         case .uatp:
             return "UATP"
-        case .interPayment:
+        case .interpayment:
             return "Interpayment"
         }
     }
@@ -119,54 +119,27 @@ public extension CreditCardType {
     var logoDark: UIImage {
         switch self {
         case .amex:
-            #imageLiteral(resourceName: <#T##String#>)
+            return #imageLiteral(resourceName: "amex")
         case .unionPay:
-            return
+            return #imageLiteral(resourceName: "union-pay")
         case .dinersClub:
-            return
+            return #imageLiteral(resourceName: "diners-club")
         case .discover:
-            return
+            return #imageLiteral(resourceName: "discover")
         case .jcb:
-            return
+            return #imageLiteral(resourceName: "jcb")
         case .maestro:
-            return
+            return #imageLiteral(resourceName: "maestro")
         case .dankort:
-            return
-        case .masterCard:
-            return
+            return #imageLiteral(resourceName: "dankort")
+        case .mastercard:
+            return #imageLiteral(resourceName: "mastercard")
         case .visa:
-            return
+            return #imageLiteral(resourceName: "amex")
         case .uatp:
-            return
-        case .interPayment:
-            return
-        }
-    }
-    
-    var logoLight: UIImage {
-        switch self {
-        case .amex:
-            return
-        case .unionPay:
-            return
-        case .dinersClub:
-            return
-        case .discover:
-            return
-        case .jcb:
-            return
-        case .maestro:
-            return
-        case .dankort:
-            return
-        case .masterCard:
-            return
-        case .visa:
-            return
-        case .uatp:
-            return
-        case .interPayment:
-            return
+            return #imageLiteral(resourceName: "uatp")
+        case .interpayment:
+            return #imageLiteral(resourceName: "interpay")
         }
     }
 }
@@ -301,7 +274,7 @@ private extension CreditCardType {
         case .dankort:
             prefixes = ["5019"]
             lengths = [16]
-        case .masterCard:
+        case .mastercard:
             prefixes = ["51"..."55"]
             lengths = [16]
         case .visa(let type):
@@ -316,7 +289,7 @@ private extension CreditCardType {
         case .uatp:
             prefixes = ["1"]
             lengths = [15]
-        case .interPayment:
+        case .interpayment:
             prefixes = ["636"]
             lengths = [16, 17, 18, 19]
         }
@@ -355,7 +328,7 @@ private extension CreditCardType {
                     19: [4, 4, 4, 4, 3]]
         case .dankort:
             return [16: [4, 4, 4, 4]]
-        case .masterCard:
+        case .mastercard:
             return [16: [4, 4, 4, 4]]
         case .visa(let type):
             switch type {
@@ -366,7 +339,7 @@ private extension CreditCardType {
             }
         case .uatp:
             return [15: [4, 5, 6]]
-        case .interPayment:
+        case .interpayment:
             return [16: [4, 4, 4, 4]]
         }
     }

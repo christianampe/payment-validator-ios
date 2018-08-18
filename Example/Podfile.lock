@@ -2,7 +2,7 @@ PODS:
   - FlatDropdown (0.0.3):
     - FlatField (~> 0.0.7)
   - FlatField (0.0.7)
-  - PaymentValidator (0.0.2)
+  - PaymentValidator (0.0.5)
 
 DEPENDENCIES:
   - FlatDropdown (~> 0.0.3)
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FlatDropdown: 6c30e5927c160c6a43bc913ce56dff6be6c83031
   FlatField: 02bdbee53e9c334814fab565e1c0a6d4c46b6b06
-  PaymentValidator: e484faacb9ec8a82663f95d6aaf69b3e94cc9543
+  PaymentValidator: 0f537321bc2a3fb7c9203ed4c860a3d35a9126cd
 
 PODFILE CHECKSUM: 58dfddbb265dcc6362d131556ee51243c31fa5ee
 

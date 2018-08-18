@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FlatDropdown: 6c30e5927c160c6a43bc913ce56dff6be6c83031
   FlatField: 02bdbee53e9c334814fab565e1c0a6d4c46b6b06
-  PaymentValidator: d42088b48bec563c0abb5423562af3bb79717e07
+  PaymentValidator: e484faacb9ec8a82663f95d6aaf69b3e94cc9543
 
 PODFILE CHECKSUM: 58dfddbb265dcc6362d131556ee51243c31fa5ee
 

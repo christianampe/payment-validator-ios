@@ -20,9 +20,5 @@
   },
   "swift_version": "4.1",
   "source_files": "PaymentValidator/Classes/**/*",
-  "resource_bundles": {
-    "PaymentValidator": [
-      "PaymentValidator/Assets/*.png"
-    ]
-  }
+  "resources": "PaymentValidator/Assets/*.png"
 }

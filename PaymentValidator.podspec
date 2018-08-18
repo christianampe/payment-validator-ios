@@ -11,7 +11,5 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '9.3'
     s.swift_version         = '4.1'
     s.source_files = 'PaymentValidator/Classes/**/*'
-    s.resource_bundles = {
-        'PaymentValidator' => ['PaymentValidator/Assets/*.png']
-    }
+    s.resources = 'PaymentValidator/Assets/*.png'
 end

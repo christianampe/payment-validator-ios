@@ -119,7 +119,7 @@ public extension CreditCardType {
     var logoDark: UIImage {
         switch self {
         case .amex:
-            return
+            #imageLiteral(resourceName: <#T##String#>)
         case .unionPay:
             return
         case .dinersClub:

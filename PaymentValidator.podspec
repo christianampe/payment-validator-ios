@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'PaymentValidator'
-    s.version          = '0.0.4'
+    s.version          = '0.0.5'
     s.summary          = 'A simple credit card validator.'
     s.description      = 'A simple credit card validator useful to developers who want an on device way of validating a credit cards number is potentially valid.'
     s.homepage         = 'https://github.com/educrate/payment-validator-ios'

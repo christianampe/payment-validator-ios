@@ -7,12 +7,12 @@
 
 import Foundation
 
-public struct CreditCardTypeValidationRequirement {
-    public let prefixes: [PrefixContainable]
-    public let lengths: [Int]
+struct CreditCardTypeValidationRequirement {
+    let prefixes: [PrefixContainable]
+    let lengths: [Int]
 }
 
-public extension CreditCardTypeValidationRequirement {
+extension CreditCardTypeValidationRequirement {
     func isValid(_ accountNumber: String) -> Bool {
         return isLengthValid(accountNumber) && isPrefixValid(accountNumber)
     }

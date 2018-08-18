@@ -14,7 +14,7 @@ public enum CreditCardTypeValidationState: Equatable {
     case invalid
 }
 
-public extension CreditCardTypeValidationState {
+extension CreditCardTypeValidationState {
     // MARK: Explicit Initalizer
     init(fromNumber number: String, supportedCards: [CreditCardType]) {
         guard let card = CreditCardType.all.first(where: { $0.isValid(number) }) else {

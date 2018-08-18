@@ -8,13 +8,13 @@
 import Foundation
 
 // MARK: - Structure To Handle Prefixes
-public protocol PrefixContainable {
+protocol PrefixContainable {
     func hasCommonPrefix(with text: String) -> Bool
     var count: Int { get }
 }
 
 extension ClosedRange: PrefixContainable {
-    public func hasCommonPrefix(with text: String) -> Bool {
+    func hasCommonPrefix(with text: String) -> Bool {
         guard
             let lower = lowerBound as? String,
             let upper = upperBound as? String
@@ -34,7 +34,7 @@ extension ClosedRange: PrefixContainable {
         return trimmedRange ~= trimmedText
     }
     
-    public var count: Int {
+    var count: Int {
         guard let upperBoundString = upperBound as? String else {
             assert(false, "improper use - only use this value on a string closed range")
             return -1
@@ -45,7 +45,7 @@ extension ClosedRange: PrefixContainable {
 }
 
 extension String: PrefixContainable {
-    public func hasCommonPrefix(with text: String) -> Bool {
+    func hasCommonPrefix(with text: String) -> Bool {
         return hasPrefix(text) || text.hasPrefix(self)
     }
 }

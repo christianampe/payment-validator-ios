@@ -7,8 +7,8 @@
 
 import Foundation
 
-open class CreditCardTypeValidator {
-    open let supportedCardTypes: [CreditCardType]
+public class CreditCardTypeValidator {
+    private let supportedCardTypes: [CreditCardType]
     
     public init(_ supportedCardTypes: [CreditCardType] = CreditCardType.all) {
         

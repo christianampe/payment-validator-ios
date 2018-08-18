@@ -7,12 +7,12 @@
 
 import Foundation
 
-public struct Mathematics {
+struct Mathematics {
     static let defaultSegmentSize: Int = 4
 }
 
 // MARK: - Default Grouping Logic
-public extension Mathematics {
+extension Mathematics {
     static func defaultGrouping(for length: Int) -> [Int] {
         var defaultGrouping: [Int]
         
@@ -37,7 +37,7 @@ public extension Mathematics {
 }
 
 // MARK: - Luhn Check
-public extension Mathematics {
+extension Mathematics {
     // per https://gist.github.com/cwagdev/635ce973e8e86da0403a
     static func luhnCheck(_ cardNumber: String) -> Bool {
         var sum: Int = 0

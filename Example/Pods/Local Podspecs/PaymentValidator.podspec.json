@@ -1,6 +1,6 @@
 {
   "name": "PaymentValidator",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "summary": "A simple credit card validator.",
   "description": "A simple credit card validator useful to developers who want an on device way of validating a credit cards number is potentially valid.",
   "homepage": "https://github.com/educrate/payment-validator-ios",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/educrate/payment-validator-ios.git",
-    "tag": "0.0.5"
+    "tag": "0.0.6"
   },
   "platforms": {
     "ios": "9.3"

@@ -60,6 +60,8 @@ extension ViewController: FlatDropdownDataSource {
         
         cards.forEach { card in
             data[0].append(card.name)
+            
+            print(card.logoDark)
         }
         
         flatDropdown.tableView.reloadData()

@@ -39,6 +39,7 @@
 		AD606EC6B499555D22A1667D031E543B /* union-pay.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D85AF9928873AC146B3EE1BEC9C2D5 /* union-pay.png */; };
 		AD908086524DD01AC015DF461912D4F7 /* discover.png in Resources */ = {isa = PBXBuildFile; fileRef = DE9C20E680B29750E70A956EC41EB414 /* discover.png */; };
 		B48A1201F2738D4225E9B9766304E10C /* amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 693740E9F9F95087DE83E486745F1095 /* amex.png */; };
+		BFE2CA2E2129EB5F00A0EBDB /* ImageExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2CA2C2129EB5F00A0EBDB /* ImageExtractor.swift */; };
 		C01275A9A31CB2E190F27D435056EBBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E760A1565DE57D8C7F08EE2CB1CCE15 /* Images.xcassets */; };
 		C1AB06F0E2E079A332FAAE973470F8B1 /* interpay.png in Resources */ = {isa = PBXBuildFile; fileRef = 0678CD3814124F2F350E27097F79BBDA /* interpay.png */; };
 		CFB2A826C52BB64E1A4570CED03403C8 /* FlatDropdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C00D8D73C605E115CBCF71E9A95111CF /* FlatDropdown-dummy.m */; };
@@ -99,18 +100,18 @@
 		0678CD3814124F2F350E27097F79BBDA /* interpay.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = interpay.png; path = PaymentValidator/Assets/interpay.png; sourceTree = "<group>"; };
 		075D219EDF248495ACDD7D897B1F14DC /* dankort.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dankort.png; path = PaymentValidator/Assets/dankort.png; sourceTree = "<group>"; };
 		07DB9532D787619424DE136777C4D1F9 /* Pods-PaymentValidator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaymentValidator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		087B57E3306F40A5A7C2158493B2D3E7 /* FlatField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlatField.framework; path = FlatField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		087B57E3306F40A5A7C2158493B2D3E7 /* FlatField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1D4AB822E96CEB17D5ECBB1294EEFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D7B2990AD7841241530BE4C776DE7C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		143C26F15B07177026A99FD146E05EA6 /* Pods-PaymentValidator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaymentValidator_Example-dummy.m"; sourceTree = "<group>"; };
 		144005C07A8648EFB7C53F02E059CFDC /* maestro.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = maestro.png; path = PaymentValidator/Assets/maestro.png; sourceTree = "<group>"; };
 		16D57309CB84279CFC7DF56A636929AB /* PaymentValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PaymentValidator.modulemap; sourceTree = "<group>"; };
 		1854B6C5F984949C5BB30D4D947677D3 /* FlatDropdownConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdownConfig.swift; path = FlatDropdown/Classes/FlatDropdownConfig.swift; sourceTree = "<group>"; };
-		194B28DF9DB8D6A50CB7D07AE37C677D /* Pods_PaymentValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaymentValidator_Tests.framework; path = "Pods-PaymentValidator_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		194B28DF9DB8D6A50CB7D07AE37C677D /* Pods_PaymentValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentValidator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F74AE7F0345C91F6D19E41B9E6D8746 /* FlatDropdownDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdownDelegate.swift; path = FlatDropdown/Classes/FlatDropdownDelegate.swift; sourceTree = "<group>"; };
 		214B011C717A98D9400A88FC3CB036BB /* Pods-PaymentValidator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PaymentValidator_Example.modulemap"; sourceTree = "<group>"; };
 		24E2E767F9205856A4B542B1254AE41F /* CreditCardTypeValidationState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreditCardTypeValidationState.swift; path = PaymentValidator/Classes/CreditCardTypeValidationState.swift; sourceTree = "<group>"; };
-		321926959D89B5246D39680BA17DB92B /* PaymentValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PaymentValidator.framework; path = PaymentValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		321926959D89B5246D39680BA17DB92B /* PaymentValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaymentValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A1646FACBEBD603C4D937628CEFA25 /* diners-club.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "diners-club.png"; path = "PaymentValidator/Assets/diners-club.png"; sourceTree = "<group>"; };
 		36887F4DE35E3D5DB9D5FDFE266A4077 /* CreditCardType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreditCardType.swift; path = PaymentValidator/Classes/CreditCardType.swift; sourceTree = "<group>"; };
 		3F414A05ED424A89CC918C58B167A417 /* Pods-PaymentValidator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaymentValidator_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +141,7 @@
 		8BD751370B15D2924443D61F7B964D22 /* visa-light.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visa-light.png"; path = "PaymentValidator/Assets/visa-light.png"; sourceTree = "<group>"; };
 		8F05F165F44B1B539F3C519987C6E4C0 /* FlatDropdownDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdownDataSource.swift; path = FlatDropdown/Classes/FlatDropdownDataSource.swift; sourceTree = "<group>"; };
 		8FB153528A4B939015939EA2B8BDA26D /* FlatField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatField-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9D8399BF80DC137FD45A8EB82E6B9422 /* FlatDropdown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlatDropdown.modulemap; sourceTree = "<group>"; };
 		9F97CA658C54E88E9AB54E6CFBCA5213 /* PaymentValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PaymentValidator-prefix.pch"; sourceTree = "<group>"; };
@@ -148,11 +149,12 @@
 		A5A97E431609829B37A1622E3368A4FA /* CreditCardTypeValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreditCardTypeValidator.swift; path = PaymentValidator/Classes/CreditCardTypeValidator.swift; sourceTree = "<group>"; };
 		A77D37145C5D2C4F4470F2D0433B161B /* FlatField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlatField.xcconfig; sourceTree = "<group>"; };
 		A86022FBA99557B99F8A00B75DCE5256 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B01D063EF42553116DA93C550DBBAE10 /* FlatDropdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlatDropdown.framework; path = FlatDropdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01D063EF42553116DA93C550DBBAE10 /* FlatDropdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatDropdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C689E595FF53364B91917F87D3FE68 /* FlatDropdown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatDropdown-prefix.pch"; sourceTree = "<group>"; };
 		B710BD35E6E9683F951CE16732DE3F38 /* FlatFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatFieldDelegate.swift; path = FlatField/Classes/FlatFieldDelegate.swift; sourceTree = "<group>"; };
 		BB8AC3390CC865FB03033749954FECD6 /* FlatDropdown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatDropdown-umbrella.h"; sourceTree = "<group>"; };
 		BBE69BEE4F205AA8B349A155C2530393 /* PrefixContainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrefixContainable.swift; path = PaymentValidator/Classes/PrefixContainable.swift; sourceTree = "<group>"; };
+		BFE2CA2C2129EB5F00A0EBDB /* ImageExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageExtractor.swift; path = PaymentValidator/Classes/ImageExtractor.swift; sourceTree = "<group>"; };
 		C00D8D73C605E115CBCF71E9A95111CF /* FlatDropdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlatDropdown-dummy.m"; sourceTree = "<group>"; };
 		C29DC99C023DFBCB36DA11B0300917A2 /* FlatDropdown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlatDropdown.xcconfig; sourceTree = "<group>"; };
 		C33D83FE76C93BA3CABC350A4719F29A /* FlatField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,16 +163,16 @@
 		C8933B4BB248940AEA63A7742CC829B5 /* FlatFieldConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatFieldConfig.swift; path = FlatField/Classes/FlatFieldConfig.swift; sourceTree = "<group>"; };
 		C8E19C744E66EB98BB9F21AE20120979 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B6D3C2C6410045C6694B6ADC76034E /* FlatDropdownTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdownTableView.swift; path = FlatDropdown/Classes/FlatDropdownTableView.swift; sourceTree = "<group>"; };
-		DB2CBD73B152AB645EBDE14B61B8BE55 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DB2CBD73B152AB645EBDE14B61B8BE55 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE9C20E680B29750E70A956EC41EB414 /* discover.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = discover.png; path = PaymentValidator/Assets/discover.png; sourceTree = "<group>"; };
-		E60BA823A7E8AA770CC2C79F43E67285 /* PaymentValidator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PaymentValidator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E60BA823A7E8AA770CC2C79F43E67285 /* PaymentValidator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = PaymentValidator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EF0A89A94166F610FED48EAD0E6AE8CC /* Pods-PaymentValidator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaymentValidator_Example-umbrella.h"; sourceTree = "<group>"; };
 		F0940F161656ECF41C671F0BA13ED2F9 /* PaymentValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PaymentValidator-umbrella.h"; sourceTree = "<group>"; };
 		F54F286C2D6FBB3A891A626680376C35 /* Pods-PaymentValidator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaymentValidator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F577791758C7951FCF54CDFDC2C714FB /* Pods_PaymentValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaymentValidator_Example.framework; path = "Pods-PaymentValidator_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F577791758C7951FCF54CDFDC2C714FB /* Pods_PaymentValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentValidator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64243EAC020485A2E356089F3285D1E /* Pods-PaymentValidator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaymentValidator_Tests-dummy.m"; sourceTree = "<group>"; };
 		F64C5628FC9C2BCACD56E76D96E63D8C /* Pods-PaymentValidator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PaymentValidator_Tests.modulemap"; sourceTree = "<group>"; };
-		F9C9FEA754610040C3AEDA977612C706 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F9C9FEA754610040C3AEDA977612C706 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 				A5A97E431609829B37A1622E3368A4FA /* CreditCardTypeValidator.swift */,
 				C4EF0182D8DAD1066B9280F509F89832 /* Mathematics.swift */,
 				BBE69BEE4F205AA8B349A155C2530393 /* PrefixContainable.swift */,
+				BFE2CA2C2129EB5F00A0EBDB /* ImageExtractor.swift */,
 				136227865D1B5DFD3C270D9AD0B72198 /* Pod */,
 				7CC91DE44C7F3544B56EAD3DF438CB9C /* Resources */,
 				38DDC88507F76C8B79FA51E0C6524117 /* Support Files */,
@@ -265,7 +268,6 @@
 				B710BD35E6E9683F951CE16732DE3F38 /* FlatFieldDelegate.swift */,
 				B4405FE08308FF1803B4B73BAEB4EF13 /* Support Files */,
 			);
-			name = FlatField;
 			path = FlatField;
 			sourceTree = "<group>";
 		};
@@ -434,7 +436,6 @@
 				D6B6D3C2C6410045C6694B6ADC76034E /* FlatDropdownTableView.swift */,
 				C246F7575725F478FF0F6E452403BFE5 /* Support Files */,
 			);
-			name = FlatDropdown;
 			path = FlatDropdown;
 			sourceTree = "<group>";
 		};
@@ -640,6 +641,7 @@
 				F85BDD44808246C74037790467373427 /* CreditCardTypeValidator.swift in Sources */,
 				3CD75FD807C6E5268C382C23ECF97B14 /* Mathematics.swift in Sources */,
 				613AC739D8674929896A617C138A3392 /* PaymentValidator-dummy.m in Sources */,
+				BFE2CA2E2129EB5F00A0EBDB /* ImageExtractor.swift in Sources */,
 				4217BB7F70AA6A66E1F1DAE56BA82D59 /* PrefixContainable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

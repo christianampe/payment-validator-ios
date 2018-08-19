@@ -116,30 +116,30 @@ public extension CreditCardType {
         }
     }
     
-    var logoDark: UIImage {
+    var logoDark: UIImage? {
         switch self {
         case .amex:
-            return #imageLiteral(resourceName: "amex")
+            return UIImage.for(#imageLiteral(resourceName: "amex"))
         case .unionPay:
-            return #imageLiteral(resourceName: "union-pay")
+            return UIImage.for(#imageLiteral(resourceName: "union-pay"))
         case .dinersClub:
-            return #imageLiteral(resourceName: "diners-club")
+            return UIImage.for(#imageLiteral(resourceName: "diners-club"))
         case .discover:
-            return #imageLiteral(resourceName: "discover")
+            return UIImage.for(#imageLiteral(resourceName: "discover"))
         case .jcb:
-            return #imageLiteral(resourceName: "jcb")
+            return UIImage.for(#imageLiteral(resourceName: "jcb"))
         case .maestro:
-            return #imageLiteral(resourceName: "maestro")
+            return UIImage.for(#imageLiteral(resourceName: "maestro"))
         case .dankort:
-            return #imageLiteral(resourceName: "dankort")
+            return UIImage.for(#imageLiteral(resourceName: "dankort"))
         case .mastercard:
-            return #imageLiteral(resourceName: "mastercard")
+            return UIImage.for(#imageLiteral(resourceName: "mastercard"))
         case .visa:
-            return #imageLiteral(resourceName: "visa")
+            return UIImage.for(#imageLiteral(resourceName: "visa"))
         case .uatp:
-            return #imageLiteral(resourceName: "uatp")
+            return UIImage.for(#imageLiteral(resourceName: "uatp"))
         case .interpayment:
-            return #imageLiteral(resourceName: "interpay")
+            return UIImage.for(#imageLiteral(resourceName: "interpay"))
         }
     }
 }

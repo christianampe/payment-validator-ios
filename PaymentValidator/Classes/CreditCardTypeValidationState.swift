@@ -34,7 +34,7 @@ extension CreditCardTypeValidationState {
     init(fromPrefix prefix: String, supportedCards: [CreditCardType]) {
         // ensure that there are cards that can be supported
         guard supportedCards.count > 0 else {
-            self = .invalid
+            self = .unsupported(cards: CreditCardType.all)
             return
         }
         

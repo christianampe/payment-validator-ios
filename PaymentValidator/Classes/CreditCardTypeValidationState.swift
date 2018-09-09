@@ -14,24 +14,53 @@ public enum CreditCardTypeValidationState: Equatable {
     case invalid
 }
 
+// MARK: - Initalizers
 extension CreditCardTypeValidationState {
-    // MARK: Explicit Initalizer
+    
+    /// init to be used on a fully entered credit card
+    /// use when the card number has been fully entered
     init(fromNumber number: String, supportedCards: [CreditCardType]) {
-        guard let card = CreditCardType.all.first(where: { $0.isValid(number) }) else {
+        
+        // ensure that there are cards that can be supported
+        guard supportedCards.count > 0 else {
+            self = .unsupported(cards: CreditCardType.all)
+            return
+        }
+        
+        // run all cards through full validation
+        let cards = CreditCardType.all.filter { $0.isValid(number) }
+        
+        // ensure the result of validation yields at least one card
+        guard cards.count > 0 else {
             self = .invalid
             return
         }
         
+        // extract the first card from the valid card array
+        // there should never be more than one card in this array
+        // if there is return an indetermine result
+        guard let card = cards.first else {
+            self = .indeterminate(cards: cards)
+            return
+        }
+        
+        // make sure the identified card is contained
+        // in the list of supported cards
+        // otherwise return an unsupported result
         guard supportedCards.contains(card) else {
             self = .unsupported(cards: [card])
             return
         }
         
+        // if all these checks succeed
+        // the card has been identified
         self = .identified(card)
     }
     
-    // MARK: Prefix Initalizer
+    /// init to be used on a prefix value of a credit card
+    /// use when the user is entering the account number
     init(fromPrefix prefix: String, supportedCards: [CreditCardType]) {
+        
         // ensure that there are cards that can be supported
         guard supportedCards.count > 0 else {
             self = .unsupported(cards: CreditCardType.all)

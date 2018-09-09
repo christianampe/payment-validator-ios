@@ -31,17 +31,28 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Account Number"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rop-tT-goo">
+                                <rect key="frame" x="48" y="629" width="279" height="30"/>
+                                <state key="normal" title="validate"/>
+                                <connections>
+                                    <action selector="validatePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tHb-NI-meD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KOf-wc-opm" secondAttribute="trailing" constant="24" id="Abh-mk-ILk"/>
+                            <constraint firstItem="rop-tT-goo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="48" id="Bjs-Yn-w0f"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KOf-wc-opm" secondAttribute="bottom" constant="64" id="Dop-ep-wo2"/>
                             <constraint firstItem="KOf-wc-opm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="IlR-1e-9Cj"/>
                             <constraint firstItem="KOf-wc-opm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="24" id="Jgi-86-XhL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="rop-tT-goo" secondAttribute="bottom" constant="8" id="KMr-qT-pps"/>
+                            <constraint firstAttribute="trailing" secondItem="rop-tT-goo" secondAttribute="trailing" constant="48" id="eHO-ub-j44"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="flatDropdown" destination="KOf-wc-opm" id="XZ5-hj-L2Q"/>
+                        <outlet property="validateButton" destination="rop-tT-goo" id="Xxk-db-lkf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

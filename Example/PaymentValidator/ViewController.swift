@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var data: [[String]] = [[]]
     
     @IBOutlet weak var flatDropdown: FlatDropdown!
+    @IBOutlet weak var validateButton: UIButton!
     
     let validator = CreditCardTypeValidator()
 }
@@ -27,13 +28,28 @@ extension ViewController {
     }
 }
 
+extension ViewController {
+    @IBAction func validatePressed(_ sender: Any) {
+        guard let text = flatDropdown.flatField.textField.text else {
+            return
+        }
+        
+        switch validator.state(number: text) {
+        case .identified:
+            validateButton.backgroundColor = .green
+        default:
+            validateButton.backgroundColor = .red
+        }
+    }
+}
+
 extension ViewController: FlatDropdownDelegate {
     func textDidChange(_ sender: FlatField) {
         guard let text = sender.textField.text else {
             return
         }
         
-        updateData(for: validator.card(for: text))
+        updateData(for: validator.state(prefix: text))
     }
     
     func didSelectRow(_ at: IndexPath, _ sender: FlatDropdown) {
@@ -60,8 +76,6 @@ extension ViewController: FlatDropdownDataSource {
         
         cards.forEach { card in
             data[0].append(card.name)
-            
-            print(card.logoDark)
         }
         
         flatDropdown.tableView.reloadData()

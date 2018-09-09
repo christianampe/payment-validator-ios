@@ -146,12 +146,25 @@ public extension CreditCardType {
 
 // MARK: - Main Validation Method On Array Of Credit Card Type
 public extension Array where Element == CreditCardType {
+//    func validate(number: String) -> [Element] {
+//        
+//        forEach { card in
+//            
+//            guard card.isValid(number) else {
+//                return
+//            }
+//            
+//            validate(prefix: number)
+//            
+//        }
+//    }
+    
     func validate(prefix: String) -> [Element] {
+        
         // have an array of credit cards and length of prefix to compare against
         // if there are multiple cards we want to find the card with the number of digits closest to the prefix length
         // need to filter out non-matching prefixes
         // if there are multiple cards with this same prefix length, return an array of cards
-        
         var minPrefixLength: Int = 0
         var potentialCardsDictionary: [Int: Set<CreditCardType>] = [:]
         
@@ -259,7 +272,7 @@ private extension CreditCardType {
                 prefixes = ["309", "36", "38"..."39"]
                 lengths = [14]
             case .usbc:
-                prefixes = ["54"..."55"]
+                prefixes = ["54", "55"]
                 lengths = [16]
             }
         case .discover:

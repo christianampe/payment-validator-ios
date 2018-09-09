@@ -145,20 +145,7 @@ public extension CreditCardType {
 }
 
 // MARK: - Main Validation Method On Array Of Credit Card Type
-public extension Array where Element == CreditCardType {
-//    func validate(number: String) -> [Element] {
-//        
-//        forEach { card in
-//            
-//            guard card.isValid(number) else {
-//                return
-//            }
-//            
-//            validate(prefix: number)
-//            
-//        }
-//    }
-    
+public extension Array where Element == CreditCardType {    
     func validate(prefix: String) -> [Element] {
         
         // have an array of credit cards and length of prefix to compare against
